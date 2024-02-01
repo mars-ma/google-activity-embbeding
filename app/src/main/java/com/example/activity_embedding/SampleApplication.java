@@ -17,7 +17,9 @@ public class SampleApplication extends Application {
         }else {
             Log.e("mxw","SPLIT_UNAVAILABLE");
         }
-        RuleController.getInstance(this)
-                .setRules(RuleController.parseRules(this, R.xml.main_split_config));
+//        RuleController.getInstance(this)
+//                .setRules(RuleController.parseRules(this, R.xml.main_split_config));
+
+        SplitManager.createSplit(this);
     }
 }
